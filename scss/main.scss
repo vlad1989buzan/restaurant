@@ -1,0 +1,72 @@
+@import "_normalize.scss";
+@import "_variables";
+@import "_animation";
+@import "block/header.scss";
+@import "block/about.scss";
+@import "block/team.scss";
+@import "block/booking.scss";
+@import "block/specialtys.scss";
+@import "block/carausel.scss";
+@import "block/menu.scss";
+@import "block/events.scss";
+@import "block/contact.scss";
+@import "block/footer.scss";
+* {
+    box-sizing: border-box;
+}
+body {
+    max-width: 1440px;
+    min-width: 320px;
+    margin: 0 auto;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+}
+main {
+    line-height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Banny Round";
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: Banny;
+    font-size: 36px;
+    line-height: 48px;
+    position: relative;
+    text-align: center;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        right: 0;
+        width: 60px;
+        height: 5px;
+        background-color: $bgcolor;
+        margin: 0 auto;
+    }
+}
+h3 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    padding-top: 50px;
+
+    letter-spacing: 0.5em;
+
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: $fcolor;
+}

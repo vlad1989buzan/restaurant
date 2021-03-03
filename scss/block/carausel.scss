@@ -1,0 +1,46 @@
+button.owl-prev,
+button.owl-next {
+    width: 28px;
+    height: 28px;
+    border: 1px solid $fcolor !important;
+    border-radius: 50%;
+    background-color: $bgcolor !important;
+    outline: none;
+    font-size: 20px;
+}
+button.owl-prev {
+    margin-right: 0px;
+}
+button.owl-next {
+    margin-left: 0px;
+}
+button.owl-prev:hover,
+button.owl-next:hover {
+    background-color: $fcolor !important;
+    color: $bgcolor !important;
+}
+button.owl-prev > div,
+button.owl-next > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel1 {
+    .owl-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 25px;
+        .owl-dot {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: $fcolor !important;
+            z-index: 1;
+            margin: 0 5px;
+        }
+        .owl-dot.active {
+            background-color: $bgcolor !important;
+        }
+    }
+}
